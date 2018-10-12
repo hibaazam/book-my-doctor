@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Book My Doctor</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                       
+            </div>
+            <div class="navbar-collapse collapse"  style="padding-top:10px">
+                
+                            <ul class="nav navbar-nav">
+                                <li><img src="../img/doctor.png" style="padding :10px"/></li>
+                                <li>
+                                    @Html.ActionLink("Index", "Home")
+                                </li>
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("About", "About", "Home")</li>
+                                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            </ul>
+                        
+                
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+        <hr />
+        <footer style="background-size: cover;
+height:100% 100%;
+                       background-position: center center;
+                       background-repeat: no-repeat;
+                       position: relative;
+                       color: #fff !important;
+                       background: #282e34;">
+            <div class="container">
+                <div class="row" style="padding-top: 20px">
+                    <div class="col-lg-4">
+
+
+                        <span style="font-size:26px">BOOK MY DOCTOR</span> <hr />
+                        <p>
+                            The patients will not have to wait for hours to see the doctor if they start using this application, the system of waiting for hours in a queue will be finished.
+                        </p>
+                        <img src="../img/fotterlogo.png" style="height:76px; text-align:center; width :230px" />
+                    </div>
+                    <div class="col-lg-4">
+                        <span style="font-size:26px">Departments</span> <hr />
+                        <ul>
+                            <li>Child Specialist</li>
+                            <li>Neuro Sergon</li>
+                            <li>Eye Specialist</li>
+                            <li>Heart Specialist</li>
+                            <li>Dentist</li>
+                            <li>Psycologist</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <span style="font-size:26px">Contact Us</span> <hr />
+                        <p>
+                            Book my doctor is your one-step Doctor appointment solution in contacting your Doctor! get in touch with usfor all your queries.
+                        </p>
+                        <img src="../img/facebook.png" />
+                        <img src="../img/twitter.png" />
+                        <img src="../img/instagram.png" />
+                    </div>
+                </div>
+            </div>
+
+            
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

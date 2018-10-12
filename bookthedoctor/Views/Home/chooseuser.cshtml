@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+<div class="container" style="padding-top:34px">
+    <h1>
+        You Want to register as:
+    </h1>
+    <p>We are providing three types of users</p>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>1- ADMIN</h3>
+            <p>After registering as a ADMIN you have the following facilities to do:</p>
+            <ul>
+                <li>Admin can update data. Enter or delete Doctors record.</li>
+                <li>View reviews by doctors and patients.</li>
+            </ul>
+            <p>
+                Reister yourself as a Admin here
+                @Html.ActionLink("Index", "Home")
+            </p>
+
+        </div>
+        <div class="col-lg-6">
+            <img src="../img/admin.png" style="width: 657px;
+    max-height: 200px;" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="../img/druser.jpg" style="    max-height: 167px;
+    width: 485px;" />
+        </div>
+        <div class="col-lg-6">
+            <h3>2- DOCTOR</h3>
+            <p>After registering as a DOCTOR you have the following facilities to do:</p>
+            <ul>
+                <li>Accept or decline appointment request by the patient</li>
+                <li>View the schedule of the patients in present day.</li>
+            </ul>
+            <p>
+                Reister yourself as a Doctor here
+                @Html.ActionLink("Index", "Home")
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>1- PATIENT</h3>
+            <p>After registering as a PATIENT you have the following facilities to do:</p>
+            <ul>
+                <li>Patient can search for doctors by specialty, name, and gender.</li>
+                <li>Patient can request for appointments online for a specific doctor at a particular time if the doctor is available.</li>
+                <li>If patient’s request for online appointment has been submitted, the mail regarding clinic name, doctor name, and appointment time will be sent to the patient.</li>
+                <li>Patient can update the profile after registration at any time.</li>
+                <li>A patient can enter the feedback about the doctor.</li>
+            </ul>
+            <p>
+                Reister yourself as a Patient here
+                @Html.ActionLink("Index", "Home")
+            </p>
+
+        </div>
+        <div class="col-lg-6">
+            <img src="../img/patient.jpg" style="width: 657px;
+    max-height: 275px;" />
+        </div>
+    </div>
+
+</div>
+
